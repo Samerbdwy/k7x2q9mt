@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#eef5f3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<meta name="apple-mobile-web-app-title" content="Ascend">
+<title>Ascend</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600&display=swap">
+<style>
+/* Plan: soft daylight world, misty mint ground with white cards, one accent that changes with the avatar's form.
+   Layout: phone app, five tabs (Home, Today, Insights, Journey, Me) with a floating tab bar. */
+:root{
+  --bg:#eef5f3; --panel:#ffffff; --panel2:#f0f6f5; --line:#d9e6e3;
+  --text:#1c2b2f; --mute:#5f767b; --accent:#e08a2e; --good:#2f9e77; --bad:#d9604f;
+  --display:"Bricolage Grotesque",system-ui,sans-serif; --body:"Figtree",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
+html,body{overscroll-behavior:none;min-height:100%;background:var(--bg);color:var(--text);font-family:var(--body);font-size:16px;line-height:1.45;-webkit-text-size-adjust:100%}
+body{display:flex;justify-content:center}
+body.lock{overflow:hidden}
+#shell{width:100%;max-width:460px;min-height:100vh;padding:max(14px,env(safe-area-inset-top)) 16px calc(86px + env(safe-area-inset-bottom))}
+#screen{display:flex;flex-direction:column;gap:14px;animation:enter .38s cubic-bezier(.2,.8,.2,1)}
+@keyframes enter{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+h2{font-family:var(--display);font-size:13px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--mute)}
+.top{display:flex;justify-content:space-between;align-items:center}
+.brand{font-family:var(--display);font-weight:800;font-size:22px}
+.chip{font-size:13px;font-weight:600;padding:6px 12px;border-radius:99px;background:var(--panel2);font-variant-numeric:tabular-nums}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:16px;display:flex;flex-direction:column;gap:12px;box-shadow:0 1px 2px rgba(30,70,70,.05),0 10px 28px rgba(30,70,70,.06)}
+.hero{position:relative;overflow:hidden;align-items:center;text-align:center;gap:6px;padding:12px 16px 18px;background:radial-gradient(110% 80% at 50% 30%,color-mix(in srgb,var(--accent) 20%,#fff) 0%,#fff 74%)}
+.parts{position:absolute;inset:0;pointer-events:none}
+.parts i{position:absolute;bottom:-10px;width:6px;height:6px;border-radius:50%;background:var(--accent);opacity:0;animation:rise var(--d) linear var(--w) infinite}
+@keyframes rise{0%{transform:translateY(0) scale(1);opacity:0}15%{opacity:.8}100%{transform:translateY(-330px) scale(.3);opacity:0}}
+.avatar{position:relative;width:min(74%,250px);animation:float 4.5s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.avatar svg{width:100%;height:auto;display:block;overflow:visible}
+.aura{transform-origin:100px 118px;animation:pulse 3s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1) rotate(0);opacity:.8}50%{transform:scale(1.06) rotate(3deg);opacity:1}}
+.form{font-family:var(--display);font-weight:800;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.days{font-family:var(--display);font-weight:800;font-size:68px;line-height:1;font-variant-numeric:tabular-nums}
+.days small{font-size:17px;font-weight:500;color:var(--mute);margin-left:6px}
+.sub{color:var(--mute);font-size:14px;font-variant-numeric:tabular-nums}
+.bar{width:100%;height:10px;border-radius:99px;background:var(--panel2);overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--accent);border-radius:99px;transition:width .9s cubic-bezier(.2,.8,.2,1)}
+.barlbl{display:flex;justify-content:space-between;width:100%;font-size:13px;color:var(--mute)}
+button{font:inherit;color:inherit;cursor:pointer;border:0;border-radius:16px;padding:14px 16px;min-height:50px;background:var(--panel2);font-weight:600;transition:transform .12s,filter .12s}
+button:active{transform:scale(.96)}
+button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.primary{background:var(--accent);color:#17100a;font-family:var(--display);font-weight:800;font-size:19px;min-height:62px;animation:glow 2.6s ease-in-out infinite}
+@keyframes glow{0%,100%{box-shadow:0 6px 18px color-mix(in srgb,var(--accent) 25%,transparent)}50%{box-shadow:0 10px 32px color-mix(in srgb,var(--accent) 50%,transparent)}}
+.small{min-height:44px;font-size:15px;padding:10px 14px}
+.ghost{background:transparent;border:1px solid var(--line);color:var(--mute)}
+.row{display:flex;gap:10px}.row>*{flex:1}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:12px 8px;text-align:center}
+.stat b{display:block;font-family:var(--display);font-size:26px;font-variant-numeric:tabular-nums}
+.stat span{font-size:12px;color:var(--mute)}
+.quest{display:flex;gap:12px;align-items:center;text-align:left;width:100%;background:var(--panel2);font-weight:600}
+.box{width:26px;height:26px;border-radius:9px;border:2px solid var(--mute);flex:none;display:grid;place-items:center;font-size:15px;color:#10170f;transition:all .25s}
+.on .box{background:var(--good);border-color:var(--good);transform:scale(1.1)}
+.on{opacity:.85}
+.xp{margin-left:auto;font-size:13px;color:var(--accent)}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.cell{aspect-ratio:1;border-radius:9px;background:var(--panel2);display:grid;place-items:center;font-size:12px;color:var(--mute)}
+.cell.clean{background:color-mix(in srgb,var(--good) 42%,var(--panel2));color:var(--text)}
+.cell.slip{background:color-mix(in srgb,var(--bad) 48%,var(--panel2));color:var(--text)}
+.cell.today{outline:2px solid var(--accent)}
+.dow{font-size:11px;text-align:center;color:var(--mute)}
+.item{display:flex;gap:12px;align-items:flex-start;background:var(--panel2);border-radius:14px;padding:12px;transition:opacity .3s}
+.item.locked{opacity:.45}
+.when{font-family:var(--display);font-weight:800;color:var(--accent);min-width:62px}
+.tag{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px;background:var(--panel);color:var(--mute);margin-top:4px}
+.tag.ev{background:color-mix(in srgb,var(--good) 25%,var(--panel));color:var(--good)}
+.note{font-size:14px;color:var(--mute)}
+.badges{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.badge{background:var(--panel2);border-radius:14px;padding:12px;font-size:13px;opacity:.4;display:flex;flex-direction:column;gap:2px}
+.badge.got{opacity:1;box-shadow:inset 0 0 0 1.5px var(--accent)}
+.badge b{font-size:14px}
+.reason{display:flex;gap:10px;align-items:center;background:var(--panel2);border-radius:14px;padding:10px 12px}
+.reason button{margin-left:auto;padding:4px 10px;min-height:36px;background:transparent;color:var(--mute)}
+input[type=text],input[type=number],textarea{font:inherit;color:var(--text);background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:12px;width:100%;min-height:50px}
+textarea{resize:vertical;min-height:90px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chipb{min-height:40px;padding:8px 14px;border-radius:99px;font-size:14px;background:var(--panel2);border:1px solid var(--line)}
+.chipb.sel{background:var(--accent);color:#17100a;border-color:var(--accent)}
+.moods{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.moods button{padding:10px 0;min-height:48px;font-family:var(--display);font-size:18px;font-weight:800}
+.moods button.sel{background:var(--accent);color:#17100a}
+.bars{display:flex;align-items:flex-end;gap:8px;height:110px}
+.bars div{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:4px;height:100%;font-size:11px;color:var(--mute)}
+.bars i{display:block;width:100%;border-radius:8px 8px 3px 3px;background:var(--accent);min-height:3px;transition:height .7s cubic-bezier(.2,.8,.2,1)}
+.bars i.zero{background:var(--panel2)}
+.warn{background:color-mix(in srgb,var(--bad) 16%,var(--panel));border-color:color-mix(in srgb,var(--bad) 50%,var(--line))}
+nav{position:fixed;left:0;right:0;bottom:0;z-index:5;background:#fff;border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom);transform:translateZ(0)}
+nav .bar2{width:100%;max-width:460px;margin:0 auto;display:flex}
+nav button{flex:1;background:transparent;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:11px;color:var(--mute);padding:9px 0 8px;min-height:58px;border-radius:0;position:relative;transition:none}
+nav button:active{transform:none}
+nav button svg{width:23px;height:23px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+nav button.act{color:var(--text);font-weight:700}
+nav button.act::before{content:"";position:absolute;top:0;left:22%;right:22%;height:3px;border-radius:0 0 4px 4px;background:var(--accent)}
+#overlay,#dialog{position:fixed;inset:0;display:none;z-index:10}
+#overlay.show,#dialog.show{display:flex}
+#overlay{background:linear-gradient(180deg,#eef5f3,#e3efec);flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:24px;text-align:center;animation:enter .3s;overflow:auto}
+#dialog{background:rgba(28,43,47,.5);align-items:center;justify-content:center;padding:20px;animation:fade .25s}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.sheet{background:var(--panel);box-shadow:0 20px 60px rgba(30,70,70,.2);border:1px solid var(--line);border-radius:22px;padding:22px;max-width:420px;width:100%;display:flex;flex-direction:column;gap:14px;text-align:center;animation:pop .35s cubic-bezier(.2,1.2,.3,1)}
+.sheet .chips{justify-content:center}
+@keyframes pop{from{transform:scale(.85);opacity:0}to{transform:none;opacity:1}}
+.sheet h3{font-family:var(--display);font-size:24px}
+.sheet .avatar{margin:0 auto;width:60%}
+.breath{width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,var(--accent),color-mix(in srgb,var(--accent) 25%,transparent));animation:breathe 14s ease-in-out infinite}
+@keyframes breathe{0%{transform:scale(.55)}29%{transform:scale(1)}57%{transform:scale(1)}100%{transform:scale(.55)}}
+.timer{font-family:var(--display);font-size:54px;font-weight:800;font-variant-numeric:tabular-nums}
+.prompt{font-size:20px;min-height:3.6em;max-width:20em}
+.toast{position:fixed;left:50%;top:max(70px,env(safe-area-inset-top));transform:translateX(-50%);background:var(--accent);color:#17100a;font-family:var(--display);font-weight:800;padding:10px 18px;border-radius:99px;z-index:20;animation:toast 1.6s ease forwards;white-space:nowrap}
+@keyframes toast{0%{opacity:0;transform:translate(-50%,10px)}15%{opacity:1;transform:translate(-50%,0)}80%{opacity:1}100%{opacity:0;transform:translate(-50%,-14px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="shell"><div id="screen"></div></div>
+<nav><div class="bar2" id="tabs"></div></nav>
+<div id="overlay" role="dialog" aria-label="Urge mode"></div>
+<div id="dialog" role="dialog" aria-modal="true"></div>
+<script id="seed" type="application/json">null</script>
+<script>
+(function(){
+var DAY=86400000, LS='ascend-v2';
+var TAB_IDS=['home','today','insights','journey','me'];
+var FORMS=[
+  {min:0, name:'Dormant', color:'#7d8b9c'},
+  {min:1, name:'Spark', color:'#e08a2e'},
+  {min:3, name:'Ember', color:'#e5642c'},
+  {min:7, name:'Surge', color:'#e0a712'},
+  {min:14,name:'Blaze', color:'#17a898'},
+  {min:30,name:'Stormbound', color:'#2f80e0'},
+  {min:60,name:'Radiant', color:'#8b5ce0'},
+  {min:90,name:'Ascendant', color:'#c9992f'}
+];
+var TOOLS=['Stand up and leave the room.','Splash cold water on your face.','Do 20 push-ups right now.','Text someone: rough night, can you talk?','Put the phone in another room.','Walk outside for ten minutes.','The urge peaks and fades. Ride it out.'];
+var QUESTS=[{id:'checkin',t:'Check in for today',xp:10},{id:'move',t:'Move your body for 10 minutes',xp:20},{id:'bed',t:'Phone charges outside the bedroom',xp:20},{id:'water',t:'Cold water on your face or a cold shower',xp:15}];
+var TRIGGERS=['Bored','Stressed','Lonely','Tired','Late night','Social media','Anxious','Other'];
+var BLOCKS=['12-4am','4-8am','8am-12','12-4pm','4-8pm','8pm-12'];
+var BENEFITS=[
+ [1,'Streak begun','Every run starts at day one. You are already practising urge control.','Reported'],
+ [3,'Urges start to fade','Many people find cravings peak in the first days, then ease.','Reported'],
+ [3,'Mental clarity','Communities say the brain fog lifts and thoughts feel sharper.','Unproven claim'],
+ [7,'Short testosterone bump','One small study saw testosterone rise around day 7 of abstinence, then return to baseline. Temporary.','Evidence'],
+ [7,'Confidence and presence','Often repeated: calmer around people, easier eye contact.','Unproven claim'],
+ [14,'Steadier sleep and focus','Fewer late-night sessions often means better sleep and attention.','Reported'],
+ [14,'Deeper voice, brighter eyes','A popular forum claim. No good studies back it.','Unproven claim'],
+ [21,'Magnetism and charisma','People say others treat them differently. Likely confidence, not a physical effect.','Unproven claim'],
+ [30,'Habit loop weakening','Triggers lose some grip. You get back the hours the habit used to take.','Reported'],
+ [45,'Vivid dreams and intuition','Commonly told anecdotally. Not shown in research.','Unproven claim'],
+ [60,'Energy transmutation','The idea that saved energy turns into drive, creativity and ambition.','Folk belief'],
+ [60,'Drive for real goals','More motivation for work, training and people is commonly reported.','Reported'],
+ [90,'The 90-day milestone','A popular benchmark. New routines feel normal. Not a clinical cutoff.','Community milestone'],
+ [90,'Ojas and jing','Yogic and Taoist traditions describe conserved vital energy as a source of strength and spiritual growth.','Spiritual tradition'],
+ [180,'Higher-self awareness','Some traditions describe deeper stillness and purpose after long practice.','Spiritual tradition']
+];
+var BADGES=[
+ ['First day','Reach day 1',function(c){return c.top>=1}],
+ ['Week warrior','7 days in a row',function(c){return c.top>=7}],
+ ['Two weeks','14 days in a row',function(c){return c.top>=14}],
+ ['Thirty strong','30 days in a row',function(c){return c.top>=30}],
+ ['Ninety','90 days in a row',function(c){return c.top>=90}],
+ ['Urge surfer','Beat 5 urges',function(c){return c.s.urges>=5}],
+ ['Storm rider','Beat 25 urges',function(c){return c.s.urges>=25}],
+ ['Self-aware','Log 7 check-ins',function(c){return Object.keys(c.s.moods).length>=7}],
+ ['Rebound','Restart after a slip',function(c){return c.s.runs.length>0&&c.s.start!=null}]
+];
+var TABS=[
+ ['home','Home','<path d="M3 11l9-8 9 8M5 10v10h14V10"/>'],
+ ['today','Today','<circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/>'],
+ ['insights','Insights','<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>'],
+ ['journey','Journey','<path d="M12 3c1 4 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-5 1-9z"/>'],
+ ['me','Me','<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.500 3.500-7 8-7s8 2.500 8 7"/>']
+];
+
+var state, tab='home', animatedDays=false, draft=null;
+function blank(){return {start:null,runs:[],slips:[],urges:0,urgeLog:[],moods:{},quests:{},reasons:['I want my time and focus back.','I want to respect myself.'],letter:'',contact:'',rewards:[],hoursPerDay:1,best:0,maxForm:-1,updated:0}}
+function load(){
+  var seed=null,loc=null;
+  try{seed=JSON.parse(document.getElementById('seed').textContent)}catch(e){}
+  try{loc=JSON.parse(localStorage.getItem(LS))}catch(e){}
+  var pick=(loc&&(!seed||(loc.updated||0)>=(seed.updated||0)))?loc:seed;
+  state=Object.assign(blank(),pick||{});
+  var h=(location.hash||'').replace('#','');
+  if(TAB_IDS.indexOf(h)>=0)tab=h;
+}
+var artifactNS=null,pubTimer=null,overlayOpen=false;
+try{ if(window.claude&&claude.use){ claude.use('artifact').then(function(a){artifactNS=a}).catch(function(){}) } }catch(e){}
+function save(){state.updated=Date.now();try{localStorage.setItem(LS,JSON.stringify(state))}catch(e){}schedulePublish()}
+function schedulePublish(){
+  if(!artifactNS)return;
+  clearTimeout(pubTimer);
+  pubTimer=setTimeout(function(){
+    if(overlayOpen||el('dialog').classList.contains('show')){schedulePublish();return}
+    try{
+      var root=document.documentElement.cloneNode(true);
+      ['screen','tabs','overlay','dialog'].forEach(function(id){var n=root.querySelector('#'+id);n.innerHTML='';n.className=''});
+      root.querySelector('body').className='';
+      root.querySelector('#seed').textContent=JSON.stringify(state).replace(/</g,'\\u003c');
+      artifactNS.publish('<!DOCTYPE html>\n'+root.outerHTML).catch(function(){});
+    }catch(e){}
+  },1800);
+}
+function now(){return Date.now()}
+function dkey(ms){return new Date(ms).toLocaleDateString('en-CA')}
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function el(id){return document.getElementById(id)}
+function curDays(){return state.start==null?0:Math.floor((now()-state.start)/DAY)}
+function bestDays(){return Math.max(state.best||0,curDays())}
+function totalDays(){var t=curDays();state.runs.forEach(function(r){t+=Math.floor((r.e-r.s)/DAY)});return t}
+function xp(){var q=0;Object.keys(state.quests).forEach(function(d){QUESTS.forEach(function(x){if(state.quests[d][x.id])q+=x.xp})});return totalDays()*100+state.urges*25+q}
+function level(x){return Math.floor(Math.sqrt(x/100))+1}
+function formIdx(d){var i=0;FORMS.forEach(function(f,k){if(d>=f.min)i=k});return i}
+function topDays(){return Math.max(curDays(),bestDays())}
+
+function avatar(fi){
+  var col=FORMS[fi].color, cx=100, cy=118, spikes=6+fi*3, pts=[], r1=64, r2=72+fi*8;
+  for(var i=0;i<spikes*2;i++){
+    var ang=(Math.PI*2*i)/(spikes*2)-Math.PI/2, r=(i%2===0)?(r2+((i*7)%5)*(2+fi)):r1;
+    pts.push((cx+Math.cos(ang)*r).toFixed(1)+','+(cy+Math.sin(ang)*r*1.1).toFixed(1));
+  }
+  var fl='<polygon class="aura" points="'+pts.join(' ')+'" fill="'+col+'" opacity="'+(0.25+fi*0.07)+'"/>';
+  if(fi>=3)fl+='<circle cx="100" cy="118" r="'+(78+fi*3)+'" fill="none" stroke="'+col+'" stroke-width="2" opacity=".5"/>';
+  var eye=fi===0?'#9aa3b2':col, crown=fi>=5?'<path d="M70 62 L82 40 L94 58 L100 34 L106 58 L118 40 L130 62 Z" fill="'+col+'" opacity=".9"/>':'';
+  return '<svg viewBox="0 0 200 236" role="img" aria-label="Avatar form '+FORMS[fi].name+'">'+fl
+   +'<path d="M36 224 C36 178 64 160 100 160 C136 160 164 178 164 224 Z" fill="#33475f" stroke="'+col+'" stroke-width="2"/>'
+   +'<path d="M78 164 L100 196 L122 164" fill="none" stroke="'+col+'" stroke-width="3" stroke-linecap="round"/>'
+   +'<path d="M54 108 C54 66 76 48 100 48 C124 48 146 66 146 108 L146 124 C146 150 126 166 100 166 C74 166 54 150 54 124 Z" fill="#3b5069"/>'
+   +'<path d="M66 112 C66 84 82 74 100 74 C118 74 134 84 134 112 C134 136 120 150 100 150 C80 150 66 136 66 112 Z" fill="#18232f"/>'
+   +'<ellipse cx="84" cy="112" rx="9" ry="5" fill="'+eye+'"/><ellipse cx="116" cy="112" rx="9" ry="5" fill="'+eye+'"/>'+crown+'</svg>';
+}
+function particles(){var s='';for(var i=0;i<14;i++){s+='<i style="left:'+(6+i*6.6)+'%;--d:'+(3.5+(i*37%30)/10)+'s;--w:-'+((i*53%40)/10)+'s"></i>'}return s}
+function drawTabs(){
+  el('tabs').innerHTML=TABS.map(function(t){return '<button data-act="tab" data-id="'+t[0]+'" class="'+(tab===t[0]?'act':'')+'" aria-label="'+t[1]+'"><svg viewBox="0 0 24 24">'+t[2]+'</svg>'+t[1]+'</button>'}).join('');
+}
+function toTop(){try{window.scrollTo(0,0);document.documentElement.scrollTop=0;document.body.scrollTop=0}catch(e){}}
+function setTab(t){grabDraft();tab=t;try{history.replaceState(null,'','#'+t)}catch(e){try{location.hash=t}catch(e2){}}render();toTop()}
+
+function render(){
+  var d=curDays(), fi=formIdx(d), f=FORMS[fi];
+  document.documentElement.style.setProperty('--accent',f.color);
+  drawTabs();
+  var x=xp(), lv=level(x), h='';
+  h+='<div class="top"><div class="brand">Ascend</div><div class="chip">Level '+lv+' · '+x+' XP</div></div>';
+  if(tab==='home')h+=homeScreen(d,fi,x,lv);
+  if(tab==='today')h+=todayScreen();
+  if(tab==='insights')h+=insightsScreen();
+  if(tab==='journey')h+=journeyScreen();
+  if(tab==='me')h+=meScreen();
+  var s=el('screen');s.style.animation='none';s.innerHTML=h;void s.offsetWidth;s.style.animation='';
+  tick();countUp(d);
+  if(state.start!=null&&fi>state.maxForm){
+    var first=state.maxForm<0;state.maxForm=fi;save();
+    if(!first&&!overlayOpen)formUp(fi);
+  }
+}
+function nightNow(){var hr=new Date().getHours();return hr>=22||hr<5}
+function homeScreen(d,fi,x,lv){
+  var f=FORMS[fi], nf=FORMS[fi+1], started=state.start!=null, lo=(lv-1)*(lv-1)*100, hi=lv*lv*100, h='';
+  h+='<div class="card hero"><div class="parts">'+particles()+'</div><div class="avatar">'+avatar(fi)+'</div><div class="form">'+f.name+' form</div>';
+  h+='<div class="days"><span id="dn">'+(animatedDays?d:0)+'</span><small>day'+(d===1?'':'s')+' clean</small></div><div class="sub" id="hms"></div>';
+  if(started&&nf){var left=nf.min-d;h+='<div class="bar" style="margin-top:6px"><i style="width:'+Math.max(4,Math.min(100,(d-f.min)/(nf.min-f.min)*100))+'%"></i></div><div class="barlbl"><span>'+f.name+'</span><span>'+left+' day'+(left===1?'':'s')+' to '+nf.name+'</span></div>'}
+  else if(started){h+='<div class="sub">Final form reached.</div>'}
+  h+='</div>';
+  if(!started){
+    return h+'<div class="card"><h2>Begin your streak</h2><label class="note" for="pre">Days already clean (0 if starting now)</label><input id="pre" type="number" min="0" max="3650" value="0" inputmode="numeric"><button class="primary" data-act="start">Start my streak</button></div>';
+  }
+  h+='<button class="primary" data-act="urge">I am having an urge</button>';
+  if(nightNow()){
+    var bedDone=(state.quests[dkey(now())]||{}).bed;
+    h+='<div class="card warn"><h2>Night watch</h2><p>Most slips happen late at night, alone, on the phone. Put it down and charge it outside the bedroom.</p>'+(bedDone?'<p class="note">Phone parked. Good.</p>':'<button class="small" data-act="parkphone">My phone is parked outside the bedroom</button>')+'</div>';
+  }
+  h+='<div class="stats"><div class="stat"><b>'+bestDays()+'</b><span>best streak</span></div><div class="stat"><b>'+state.urges+'</b><span>urges beaten</span></div><div class="stat"><b>'+totalDays()+'</b><span>clean days</span></div></div>';
+  var nb=BENEFITS.filter(function(b){return b[0]>topDays()}).sort(function(a,b){return a[0]-b[0]})[0];
+  if(nb)h+='<div class="card"><h2>Next unlock</h2><div class="barlbl" style="color:var(--text)"><span><b>'+nb[1]+'</b></span><span>in '+(nb[0]-topDays())+' day'+(nb[0]-topDays()===1?'':'s')+'</span></div></div>';
+  h+='<div class="card"><div class="barlbl"><span>Level '+lv+'</span><span>'+(hi-x)+' XP to level '+(lv+1)+'</span></div><div class="bar"><i style="width:'+((x-lo)/(hi-lo)*100)+'%;background:var(--good)"></i></div></div>';
+  h+='<button class="ghost" data-act="slip">I slipped</button>';
+  return h;
+}
+function ensureDraft(){
+  var k=dkey(now());
+  if(!draft||draft.k!==k){var m=state.moods[k];draft={k:k,m:m?m.m:0,trigs:m?m.trigs.slice():[],note:m?m.note:''}}
+}
+function grabDraft(){var n=el('note');if(n&&draft)draft.note=n.value}
+function todayScreen(){
+  ensureDraft();
+  var q=state.quests[dkey(now())]||{}, saved=!!state.moods[draft.k], h='<div class="card"><h2>Daily check-in</h2><p class="note">How is today going?</p><div class="moods">';
+  for(var i=1;i<=5;i++)h+='<button data-act="mood" data-id="'+i+'" class="'+(draft.m===i?'sel':'')+'" aria-label="Mood '+i+' of 5">'+i+'</button>';
+  h+='</div><div class="barlbl"><span>Rough</span><span>Great</span></div><p class="note">Anything tempting you today?</p><div class="chips">';
+  TRIGGERS.forEach(function(t){h+='<button class="chipb'+(draft.trigs.indexOf(t)>=0?' sel':'')+'" data-act="dtrig" data-id="'+t+'">'+t+'</button>'});
+  h+='</div><textarea id="note" placeholder="One line about today (optional)" maxlength="300">'+esc(draft.note)+'</textarea><button class="small" data-act="savecheckin" '+(draft.m?'':'disabled')+'>'+(saved?'Update check-in':'Save check-in')+'</button></div>';
+  h+='<div class="card"><h2>Today\'s quests</h2>';
+  QUESTS.forEach(function(qq){h+='<button class="quest'+(q[qq.id]?' on':'')+'" data-act="quest" data-id="'+qq.id+'"><span class="box">'+(q[qq.id]?'✓':'')+'</span><span>'+qq.t+'</span><span class="xp">+'+qq.xp+' XP</span></button>'});
+  h+='</div><div class="card"><h2>Last 5 weeks</h2><div class="cal">'+['M','T','W','T','F','S','S'].map(function(c){return '<div class="dow">'+c+'</div>'}).join('')+calendar()+'</div><p class="note">Green is a clean day. Red is a slip. The ring marks today.</p></div>';
+  return h;
+}
+function insightsScreen(){
+  var h='', log=state.urgeLog, i;
+  var counts=[0,0,0,0,0,0];log.forEach(function(u){counts[Math.floor(new Date(u.t).getHours()/4)]++});
+  var mx=Math.max.apply(null,counts.concat([1]));
+  h+='<div class="card"><h2>Danger hours</h2>';
+  if(!log.length)h+='<p class="note">Beat an urge from Home and this chart will show when they hit you.</p>';
+  else{
+    var bi=counts.indexOf(Math.max.apply(null,counts));
+    h+='<div class="bars">'+counts.map(function(c,k){return '<div><span>'+c+'</span><i class="'+(c?'':'zero')+'" style="height:'+(c/mx*80)+'%"></i><span>'+BLOCKS[k]+'</span></div>'}).join('')+'</div><p class="note">Most of your urges hit between '+BLOCKS[bi]+'. Plan something for that window.</p>';
+  }
+  h+='</div>';
+  var tc={};log.forEach(function(u){if(u.trig)tc[u.trig]=(tc[u.trig]||0)+1});Object.keys(state.moods).forEach(function(k){state.moods[k].trigs.forEach(function(t){tc[t]=(tc[t]||0)+1})});
+  var tk=Object.keys(tc).sort(function(a,b){return tc[b]-tc[a]}).slice(0,5);
+  h+='<div class="card"><h2>Your top triggers</h2>';
+  if(!tk.length)h+='<p class="note">Tag what triggers you in check-ins and after urges. Patterns show up here.</p>';
+  else{var tm=tc[tk[0]];tk.forEach(function(t){h+='<div class="barlbl" style="color:var(--text)"><span>'+t+'</span><span>'+tc[t]+'</span></div><div class="bar"><i style="width:'+(tc[t]/tm*100)+'%"></i></div>'})}
+  h+='</div>';
+  var days=[];for(i=6;i>=0;i--){var dt=new Date(now()-i*DAY);days.push({k:dkey(dt.getTime()),l:'SMTWTFS'.charAt(dt.getDay())})}
+  var dc=days.map(function(dd){return log.filter(function(u){return dkey(u.t)===dd.k}).length}),dm=Math.max.apply(null,dc.concat([1]));
+  h+='<div class="card"><h2>Urges, last 7 days</h2><div class="bars">'+dc.map(function(c,k){return '<div><span>'+c+'</span><i class="'+(c?'':'zero')+'" style="height:'+(c/dm*80)+'%"></i><span>'+days[k].l+'</span></div>'}).join('')+'</div></div>';
+  var ms=days.map(function(dd){return state.moods[dd.k]?state.moods[dd.k].m:0}).filter(function(v){return v>0});
+  if(ms.length)h+='<div class="card"><h2>Mood, last 7 days</h2><p><b style="font-family:var(--display);font-size:28px">'+(ms.reduce(function(a,b){return a+b},0)/ms.length).toFixed(1)+'</b> <span class="note">average out of 5 across '+ms.length+' check-in'+(ms.length===1?'':'s')+'</span></p></div>';
+  var hrs=Math.round(totalDays()*(state.hoursPerDay||0));
+  h+='<div class="card"><h2>Time reclaimed</h2><p><b style="font-family:var(--display);font-size:34px">'+hrs+'</b> <span class="note">hours back, about '+(hrs/24).toFixed(1)+' full days</span></p><label class="note" for="hpd">Hours per day the habit used to take</label><input id="hpd" type="number" min="0" max="12" step="0.5" value="'+(state.hoursPerDay||0)+'" inputmode="decimal"></div>';
+  return h;
+}
+function journeyScreen(){
+  var top=topDays(), h='<div class="card"><h2>Benefits unlocked</h2>';
+  BENEFITS.slice().sort(function(a,b){return a[0]-b[0]}).forEach(function(b){
+    var got=top>=b[0], ev=b[3]==='Evidence';
+    h+='<div class="item'+(got?'':' locked')+'"><span class="when">Day '+b[0]+'</span><span><b>'+b[1]+(got?' ✓':'')+'</b><br><span class="note">'+b[2]+'</span><br><span class="tag'+(ev?' ev':'')+'">'+b[3]+'</span></span></div>';
+  });
+  h+='<p class="note">Tags show how solid each one is. Evidence has a study behind it. Reported is common experience. Unproven claim, Folk belief and Spiritual tradition are what people say or believe, not established science.</p></div>';
+  h+='<div class="card"><h2>My rewards</h2><p class="note">Promise yourself something real at a milestone.</p>';
+  state.rewards.slice().sort(function(a,b){return a.day-b.day}).forEach(function(r,i){var got=top>=r.day;h+='<div class="item'+(got?'':' locked')+'"><span class="when">Day '+r.day+'</span><span><b>'+esc(r.text)+(got?' ✓ Earned':'')+'</b></span><button class="small" style="margin-left:auto;background:transparent;color:var(--mute)" data-act="delreward" data-id="'+r.day+'|'+esc(r.text)+'">Remove</button></div>'});
+  h+='<div class="row"><input type="number" id="rday" placeholder="Day" min="1" max="1000" inputmode="numeric" style="flex:0 0 90px"><input type="text" id="rtext" placeholder="Reward" maxlength="60"></div><button class="small" data-act="addreward">Add reward</button></div>';
+  var ctx={s:state,top:top};
+  h+='<div class="card"><h2>Badges</h2><div class="badges">'+BADGES.map(function(b){return '<div class="badge'+(b[2](ctx)?' got':'')+'"><b>'+b[0]+'</b><span>'+b[1]+'</span></div>'}).join('')+'</div></div>';
+  return h;
+}
+function meScreen(){
+  var h='<div class="card"><h2>My reasons</h2>'+state.reasons.map(function(r,i){return '<div class="reason"><span>'+esc(r)+'</span><button data-act="delreason" data-i="'+i+'" aria-label="Remove reason">Remove</button></div>'}).join('');
+  h+='<div class="row"><input type="text" id="newreason" placeholder="Add your own reason" maxlength="120"><button data-act="addreason" style="flex:0 0 auto">Add</button></div></div>';
+  h+='<div class="card"><h2>Letter from strong you</h2><p class="note">Write this when you feel strong. It appears in urge mode when you are weak.</p><textarea id="letter" placeholder="Remind yourself why you started and what is at stake." maxlength="600">'+esc(state.letter)+'</textarea><button class="small" data-act="saveletter">Save letter</button></div>';
+  h+='<div class="card"><h2>Person to reach out to</h2><input type="text" id="contact" placeholder="Name and number" maxlength="80" value="'+esc(state.contact)+'"><button class="small" data-act="savecontact">Save</button><p class="note">Shown in urge mode so you can call or text them instead of giving in.</p></div>';
+  var bk=JSON.stringify(state);
+  h+='<div class="card"><h2>Backup and restore</h2><p class="note">Your progress saves automatically. Opening the app from your Claude link keeps it with you on any device. For extra safety, copy this backup somewhere private.</p><textarea id="backup" readonly>'+esc(bk)+'</textarea><button class="small" data-act="copybackup">Copy backup</button><textarea id="restore" placeholder="Paste a backup here to restore"></textarea><button class="small ghost" data-act="restore">Restore from backup</button></div>';
+  return h;
+}
+function calendar(){
+  var out='', t=new Date(); t.setHours(0,0,0,0);
+  var dow=(t.getDay()+6)%7, startDay=t.getTime()-(dow+28)*DAY;
+  for(var i=0;i<35;i++){
+    var ds=startDay+i*DAY, de=ds+DAY, cls='cell';
+    if(ds>t.getTime()){out+='<div class="cell" style="opacity:.3"></div>';continue}
+    var clean=(state.start!=null&&state.start<de)||state.runs.some(function(r){return r.s<de&&r.e>=ds});
+    var slip=state.slips.some(function(s){return s>=ds&&s<de});
+    if(slip)cls+=' slip';else if(clean)cls+=' clean';
+    if(ds===t.getTime())cls+=' today';
+    out+='<div class="'+cls+'">'+new Date(ds).getDate()+'</div>';
+  }
+  return out;
+}
+function tick(){
+  var n=el('hms');if(!n)return;
+  if(state.start==null){n.textContent='Not started yet';return}
+  var ms=now()-state.start, h=Math.floor(ms/3600000)%24, m=Math.floor(ms/60000)%60, s=Math.floor(ms/1000)%60;
+  n.textContent=h+'h '+m+'m '+s+'s into this day';
+}
+function countUp(d){
+  var n=el('dn');if(!n||animatedDays)return;animatedDays=true;
+  if(d===0){n.textContent='0';return}
+  var t0=now(),dur=900;
+  (function step(){var p=Math.min(1,(now()-t0)/dur),v=Math.round(d*(1-Math.pow(1-p,3)));var m=el('dn');if(!m)return;m.textContent=v;if(p<1)requestAnimationFrame(step)})();
+}
+setInterval(function(){
+  tick();
+  var dn=el('dn');if(dn&&animatedDays&&state.start!=null&&String(curDays())!==dn.textContent&&!overlayOpen)render();
+},1000);
+
+function toast(t){var n=document.createElement('div');n.className='toast';n.textContent=t;document.body.appendChild(n);setTimeout(function(){n.remove()},1700)}
+function dialog(html){var d=el('dialog');d.innerHTML='<div class="sheet">'+html+'</div>';d.classList.add('show');document.body.classList.add('lock')}
+function closeDialog(){var d=el('dialog');d.classList.remove('show');d.innerHTML='';document.body.classList.remove('lock')}
+function formUp(fi){dialog('<div class="form">New form unlocked</div><div class="avatar">'+avatar(fi)+'</div><h3>'+FORMS[fi].name+'</h3><p class="note">Your discipline changed who you are. Keep climbing.</p><button class="primary" data-act="closedlg">Continue</button>')}
+
+var urgeTimer=null,promptTimer=null;
+function openUrge(){
+  overlayOpen=true;document.body.classList.add('lock');
+  var end=now()+15*60000,pi=0,reasons=state.reasons.length?state.reasons:['You can do this.'],o=el('overlay');
+  o.classList.add('show');
+  o.innerHTML='<div class="sub">Urge mode. It peaks and passes.</div><div class="breath"></div><div class="sub" id="bl">Breathe in</div><div class="timer" id="tm">15:00</div><div class="prompt" id="pr"></div>'
+    +(state.contact?'<div class="note">Reach out: <b style="color:var(--text)">'+esc(state.contact)+'</b></div>':'')
+    +'<button class="ghost small" data-act="rep" style="width:100%;max-width:360px">Push-ups: <span id="reps">0</span> (tap each rep)</button>'
+    +'<div class="row" style="width:100%;max-width:360px"><button class="primary" data-act="beat">I beat it</button><button class="ghost" data-act="closeurge">Close</button></div>';
+  function setPrompt(){
+    var m=pi%3, txt;
+    if(m===0)txt=TOOLS[(pi/3)%TOOLS.length|0];
+    else if(m===1)txt='Remember: '+reasons[((pi-1)/3|0)%reasons.length];
+    else txt=state.letter?'From you: '+state.letter:TOOLS[(pi*2)%TOOLS.length];
+    el('pr').textContent=txt;pi++;
+  }
+  setPrompt();promptTimer=setInterval(setPrompt,12000);
+  var t0=now();
+  urgeTimer=setInterval(function(){
+    var left=Math.max(0,end-now()),mm=Math.floor(left/60000),ss=Math.floor(left/1000)%60,tm=el('tm');
+    if(tm)tm.textContent=mm+':'+(ss<10?'0':'')+ss;
+    var ph=((now()-t0)/1000)%14,bl=el('bl');if(bl)bl.textContent=ph<4?'Breathe in':(ph<8?'Hold':'Breathe out slowly');
+    if(left===0){clearInterval(urgeTimer);if(tm)tm.textContent='Done';var pr=el('pr');if(pr)pr.textContent='Fifteen minutes passed. The urge is weaker now.'}
+  },250);
+}
+function closeUrge(){clearInterval(urgeTimer);clearInterval(promptTimer);overlayOpen=false;document.body.classList.remove('lock');var o=el('overlay');o.classList.remove('show');o.innerHTML=''}
+function setQuest(id,val){var t=dkey(now());state.quests[t]=state.quests[t]||{};state.quests[t][id]=val}
+
+document.addEventListener('click',function(e){
+  var b=e.target.closest('[data-act]');if(!b||b.disabled)return;
+  var a=b.getAttribute('data-act'),id=b.getAttribute('data-id');
+  if(a==='tab'){if(id!==tab)setTab(id)}
+  else if(a==='start'){var n=Math.max(0,Math.min(3650,parseInt(el('pre').value,10)||0));state.start=now()-n*DAY;animatedDays=false;save();render();toast('Streak started')}
+  else if(a==='urge'){openUrge()}
+  else if(a==='closeurge'){closeUrge()}
+  else if(a==='rep'){var r=el('reps');if(r)r.textContent=(parseInt(r.textContent,10)||0)+1}
+  else if(a==='beat'){
+    state.urges++;state.urgeLog.push({t:now(),trig:null});save();closeUrge();render();toast('+25 XP · urge beaten');
+    dialog('<h3>What set it off?</h3><p class="note">Tagging it helps you spot patterns.</p><div class="chips">'+TRIGGERS.map(function(t){return '<button class="chipb" data-act="urgetrig" data-id="'+t+'">'+t+'</button>'}).join('')+'</div><button class="ghost small" data-act="closedlg">Skip</button>');
+  }
+  else if(a==='urgetrig'){var last=state.urgeLog[state.urgeLog.length-1];if(last)last.trig=id;save();closeDialog();render()}
+  else if(a==='parkphone'){setQuest('bed',true);save();render();toast('+20 XP')}
+  else if(a==='quest'){var t=dkey(now());var was=(state.quests[t]||{})[id];setQuest(id,!was);save();render();if(!was){var qq=QUESTS.filter(function(z){return z.id===id})[0];toast('+'+qq.xp+' XP')}}
+  else if(a==='mood'){grabDraft();draft.m=parseInt(id,10);render()}
+  else if(a==='dtrig'){grabDraft();var ix=draft.trigs.indexOf(id);if(ix>=0)draft.trigs.splice(ix,1);else draft.trigs.push(id);render()}
+  else if(a==='savecheckin'){grabDraft();var had=!!state.moods[draft.k];state.moods[draft.k]={m:draft.m,trigs:draft.trigs.slice(),note:draft.note.slice(0,300)};setQuest('checkin',true);save();render();toast(had?'Check-in updated':'+10 XP · checked in')}
+  else if(a==='addreason'){var v=el('newreason').value.trim();if(v){state.reasons.push(v.slice(0,120));save();render()}}
+  else if(a==='delreason'){state.reasons.splice(parseInt(b.getAttribute('data-i'),10),1);save();render()}
+  else if(a==='saveletter'){state.letter=el('letter').value.trim().slice(0,600);save();toast('Letter saved')}
+  else if(a==='savecontact'){state.contact=el('contact').value.trim().slice(0,80);save();toast('Saved')}
+  else if(a==='addreward'){var dd=parseInt(el('rday').value,10),tx=el('rtext').value.trim();if(dd>0&&tx){state.rewards.push({day:dd,text:tx.slice(0,60)});save();render();toast('Reward added')}}
+  else if(a==='delreward'){var p=id.split('|');state.rewards=state.rewards.filter(function(r){return !(String(r.day)===p[0]&&esc(r.text)===p.slice(1).join('|'))});save();render()}
+  else if(a==='copybackup'){
+    var bt=el('backup');bt.select();
+    try{navigator.clipboard.writeText(bt.value).then(function(){toast('Backup copied')}).catch(function(){toast('Select and copy the text')})}catch(err){toast('Select and copy the text')}
+  }
+  else if(a==='restore'){
+    try{var o=JSON.parse(el('restore').value);if(o&&typeof o==='object'&&Array.isArray(o.reasons)){state=Object.assign(blank(),o);animatedDays=false;save();render();toast('Restored')}else{toast('That is not a valid backup')}}catch(err){toast('That is not a valid backup')}
+  }
+  else if(a==='slip'){dialog('<h3>Restart your streak?</h3><p class="note">A slip does not erase what you built. Your best streak of '+bestDays()+' days and your XP stay. You start a fresh run right now.</p><div class="row"><button class="ghost" data-act="closedlg">Cancel</button><button class="primary" data-act="confirmslip" style="font-size:16px">Restart</button></div>')}
+  else if(a==='confirmslip'){state.best=Math.max(state.best||0,curDays());state.runs.push({s:state.start,e:now()});state.slips.push(now());state.start=now();animatedDays=false;save();closeDialog();render();dialog('<h3>New run started</h3><p class="note">One slip is data, not a verdict. Check your Insights tab to see what led to it, then begin again.</p><button class="primary" data-act="closedlg">Continue</button>')}
+  else if(a==='closedlg'){closeDialog()}
+});
+document.addEventListener('change',function(e){
+  if(e.target&&e.target.id==='hpd'){var v=parseFloat(e.target.value);state.hoursPerDay=isNaN(v)?0:Math.max(0,Math.min(12,v));save();render()}
+});
+window.addEventListener('hashchange',function(){var h=(location.hash||'').replace('#','');if(TAB_IDS.indexOf(h)>=0&&h!==tab){grabDraft();tab=h;render();toTop()}});
+
+load();render();
+})();
+</script>
+</body>
+</html>
